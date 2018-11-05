@@ -1,0 +1,29 @@
+=font-face($family, $path, $name, $svg, $weight: normal, $style: normal)
+  @font-face
+    font-family: $family
+    src: url('#{$path}/#{$name}.eot')
+    src: url('#{$path}/#{$name}.eot?#iefix') format('embedded-opentype'), url('#{$path}/#{$name}.woff') format('woff'), url('#{$path}/#{$name}.ttf') format('truetype'), url('#{$path}/#{$name}.svg##{$svg}') format('svg')
+    font-weight: $weight
+    font-style: $style
+
+
+/* font-family: "MyriadArabic - Regular"; */
++font-face('MyriadArabic', '../fonts/MyriadArabic', 'MyriadArabic-Regular', 'MyriadArabic-Regular')
+
+/* font-family: "MontserratAlternates Regular" */
++font-face('MontserratAlternates', '../fonts/MontserratAlternatesRegular', 'MontserratAlternates-Regular', 'MontserratAlternates-Regular')
+
+/* font-family: "MontserratAlternates Black" */
++font-face('MontserratAlternates', '../fonts/MontserratAlternatesBlack', 'MontserratAlternates-Black', 'MontserratAlternates-Black', $weight: 900)
+
+// /* font-family: "MontserratAlternates ExtraBold" */
+// +font-face('MontserratAlternates', '../fonts/MontserratAlternatesExtraBold', 'MontserratAlternates-ExtraBold', 'MontserratAlternates-ExtraBold', $weight: 800)
+
+// /* font-family: "SimplifiedArabic-Regular" */
+// +font-face('SimplifiedArabic', '../fonts/SimplifiedArabic', 'SimplifiedArabic', 'SimplifiedArabic')
+
+/* font-family: "SimplifiedArabic-Bold" */
++font-face('SimplifiedArabic', '../fonts/SimplifiedArabicBold', 'SimplifiedArabic-Bold', 'SimplifiedArabic-Bold', $weight: 700)
+
+/* font-family: "me_quranR3HOQ" */
++font-face('me_quranR3HOQ', '../fonts/MeQuran', 'me_quranR3HOQ', 'me_quranR3HOQ')

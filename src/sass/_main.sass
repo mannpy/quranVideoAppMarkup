@@ -1,0 +1,97 @@
+body
+  background: #f4f4f4 url(../img/background.jpg) 0 0
+
+.main
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: center
+  
+.content
+  margin-left: -15px
+  margin-right: -15px
+  text-align: center
+
+  &__title
+    margin-bottom: 60px
+    font-family: "MontserratAlternates"
+    font-size: 48px
+    font-weight: 900
+    line-height: 72px
+    letter-spacing: 2.88px
+    text-shadow: 0 0 0 #050000
+
+  &__form
+    display: flex
+    justify-content: space-around
+    flex-wrap: wrap
+
+
+.form
+
+  &__block
+    margin-bottom: 100px
+    flex-basis: 33%
+
+  &-block
+
+    &__label
+      display: block
+
+    &__select
+      position: relative
+
+
+  .label
+    margin-bottom: 23px
+    font-family: "MontserratAlternates"
+    font-size: 18px
+    font-weight: 900
+    color: #000000
+    letter-spacing: 1.08px
+
+  .select
+    padding-left: 5px
+    width: 330px
+    height: 60px
+    box-shadow: 0 7px 0 #050000
+    background-color: #fff
+    color: #040404
+    font-family: "MontserratAlternates"
+    font-size: 24px
+    letter-spacing: 1.44px
+    border: 2px solid #050000
+    border-radius: 3px
+    appearance: none
+
+    &:hover, &:focus
+      background-color: darken(#fff, 1)
+
+    &:disabled
+      opacity 0.5
+      pointer-events none
+
+    &::-ms-expand
+      display: none
+
+    &__arrow
+      width: 0
+      height: 0
+      position: absolute
+      top: 50%
+      margin-top: -8px
+      right: 8%
+      pointer-events: none
+      border-radius: 5px
+      border-style: solid
+      border-width: 20px 14px 0 14px
+      border-color: #050000 transparent transparent transparent
+
+
+  .option
+    background-color: #fff
+    color: #040404
+    font-family: "MontserratAlternates"
+    font-size: 24px
+    line-height: 2
+    letter-spacing: 1.44px
